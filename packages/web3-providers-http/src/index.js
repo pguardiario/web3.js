@@ -108,6 +108,7 @@ HttpProvider.prototype.send = function (payload, callback) {
             }
 
             _this.connected = true;
+            alert(JSON.stringify(error, result))
             callback(error, result);
         }
     };
